@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e5e5e5; /* !!! */
+  display: grid; /* !!! */
+  height: 100vh; /* !!! */
+  place-items: center; /* !!! */
+}
+  
+button, input, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+}
+
+ul > li,
+ol > li {
+  list-style-type: none;
+}

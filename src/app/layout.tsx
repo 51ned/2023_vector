@@ -1,13 +1,12 @@
-import { Inter } from 'next/font/google'
-
+import { Montserrat } from 'next/font/google'
 import type { Metadata } from 'next'
 
-import { GTM } from 'components/gtm'
+import { GTM } from 'utils/.'
 
-import 'public/globals.css'
+import 'public/styles/index.css'
 
 
-const inter = Inter({ subsets: ['latin'] })
+const font = Montserrat({ subsets: ['cyrillic'] })
 
 
 export const metadata: Metadata = {
@@ -24,7 +23,7 @@ export default async function RootLayout({
 
   return (
     <html dir='ltr' lang='ru'>
-      <body className={inter.className}>
+      <body className={font.className}>
         { children }
         <GTM />
       </body>
